@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>应用下载</title>
+
+<!-- ========== META Pixel Code ========== -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '🔴 REPLACE_PIXEL_ID');  /* ← 替换成你的 Pixel ID */
+  fbq('track', 'PageView');
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=🔴REPLACE_PIXEL_ID&ev=PageView&noscript=1"/>
+</noscript>
+<!-- ========== END META Pixel Code ========== -->
+
+<style>
+  body{
+    margin:0;
+    background:#000;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",Arial,sans-serif;
+  }
+  .wrap{
+    max-width:480px;
+    margin:0 auto;
+    padding:0;
+    position:relative;
+  }
+  .hero{
+    width:100%;
+    position:relative;
+  }
+  .hero img{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+  /* 点击整页 */
+  .download-link{
+    position:absolute;
+    inset:0;
+    display:block;
+    z-index:5;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+  <div class="hero">
+    <!-- 你的 9:16 图片 -->
+   <a href="https://ibb.co/rfM4hWBY"><img src="https://i.ibb.co/yB5WC3zt/333.jpg" alt="333" border="0"></a>
+
+    <!-- 整张图片点击跳转 AppsFlyer OneLink -->
+    <a class="download-link"
+       href="🔵 https://yourapp.onelink.me/xxxx?pid=meta&c=ad_landing"
+       onclick="fbq('track','Lead');">
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
